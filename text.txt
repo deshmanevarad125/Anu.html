@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Anu 💖</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sacramento&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 40px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2em;
+    margin: 0;
+    color: #ff4f81;
+}
+
+.subtitle {
+    font-size: 0.95em;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.message {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.heart {
+    font-size: 55px;
+    animation: float 2.5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+button {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff5f9e, #ff85b3);
+    color: white;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.floating-hearts span {
+    position: absolute;
+    bottom: -20px;
+    font-size: 18px;
+    animation: rise 6s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="heart">💗</div>
+    <h1>Anu</h1>
+    <div class="subtitle">MY VALENTINE</div>
+
+    <div class="message">
+        You’re the soft thought in my busy mind,<br>
+        the smile I don’t even realize I’m wearing.<br><br>
+
+        Every little moment with you feels special,
+        and every day with you feels like love.<br><br>
+
+        Happy Valentine’s Day, my Anu 🤍
+    </div>
+
+    <button onclick="showLove()">Tap me 🌸</button>
+</div>
+
+<div class="floating-hearts">
+    <span style="left:10%; animation-delay:0s;">💗</span>
+    <span style="left:30%; animation-delay:2s;">🤍</span>
+    <span style="left:50%; animation-delay:4s;">💕</span>
+    <span style="left:70%; animation-delay:1s;">💖</span>
+    <span style="left:90%; animation-delay:3s;">🌸</span>
+</div>
+
+<script>
+function showLove() {
+    alert("I choose you. Always, Anu 💕");
+}
+</script>
+
+</body>
+</html>
